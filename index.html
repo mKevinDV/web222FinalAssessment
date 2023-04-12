@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kevin De Vera" />
+    <title>Egyptian Ratscrew - Home Page</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h2 id="logo-title">
+        <img id="logo" src="./images/logo.jpg" alt="All About Egyptian Ratscrew Logo" />
+        <div id="title">All About Egyptian Ratscrew</div>
+      </h2>
+      <p>The Ultimate Info Page On Egyptian Ratscrew</p>
+      <p>
+        Take some time to navigate through the website to learn more about this game, join our
+        newsletter or leave your own review of the game!
+      </p>
+      <nav>
+        <a class="navLinks" href="index.html"> Home Page </a>
+        <a class="navLinks" href="info.html"> What Is Egyptian Ratscrew? </a>
+        <a class="navLinks" href="reviews.html"> Reviews </a>
+        <a class="navLinks" href="about.html"> About </a>
+      </nav>
+    </header>
+
+    <div id="intro">
+      <h3>Welcome!</h3>
+      <div class="homepage-needs">
+        <img src="./images/deckOfCardsInHand.jpg" alt="deckOfCardsInHand" />
+        <p class="hook-description">
+          Get a deck of cards if you want to take on this simple yet challenging game!
+        </p>
+      </div>
+    </div>
+
+    <div id="hook">
+      <h3>Get Started</h3>
+      A game that is easy to set up but difficult to master, <strong>three things</strong> will
+      required of you to win a game of Egyptian Ratscrew:
+      <div class="homepage-needs">
+        <img src="./images/lightning.jpg" alt="Lightning" />
+        <p class="hook-description">Lightning Quick Reflexes</p>
+      </div>
+      <div class="homepage-needs">
+        <img src="./images/thinking.jpg" alt="Thinking" />
+        <p class="hook-description">Elite Memorization</p>
+      </div>
+      <div class="homepage-needs">
+        <img src="./images/yelling.jpg" alt="Yelling" />
+        <p class="hook-description">Fierce Competitiveness</p>
+      </div>
+      Anything short of this and you may find yourself on the losing end!
+    </div>
+
+    <div id="closing">
+      <h3>Check Out Some Gameplay</h3>
+      <p>In this video uploaded by Russ Franklin, you can see how intense this game can get!</p>
+      <iframe
+        width="400"
+        height="315"
+        src="https://www.youtube.com/embed/7h99zClpN0M"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div id="newsletter-form">
+      <h4>Subcribe To The Newsletter</h4>
+      <p>If you enjoy what you see and want to stay up to date, subscribe to our newsletter!</p>
+      <form action="https://httpbin.org/post" method="POST" name="subscribe">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Enter your email here"
+          autocomplete="off"
+          autocorrect="off"
+          spellcheck="off"
+          required
+        />
+
+        <input id="name" type="hidden" name="name" value="Kevin" />
+
+        <input id="join" type="submit" value="Join" name="join" />
+      </form>
+    </div>
+  </body>
+</html>

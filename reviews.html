@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kevin De Vera" />
+    <title>Egyptian Ratscrew - Reviews Page</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h2 id="logo-title">
+        <img id="logo" src="./images/logo.jpg" alt="All About Egyptian Ratscrew Logo" />
+        <div id="title">All About Egyptian Ratscrew</div>
+      </h2>
+      <p>The Ultimate Info Page On Egyptian Ratscrew</p>
+      <p>
+        Take some time to navigate through the website to learn more about this game, join our
+        newsletter or leave your own review of the game!
+      </p>
+      <nav>
+        <a class="navLinks" href="index.html"> Home Page </a>
+        <a class="navLinks" href="info.html"> What Is Egyptian Ratscrew? </a>
+        <a class="navLinks" href="reviews.html"> Reviews </a>
+        <a class="navLinks" href="about.html"> About </a>
+      </nav>
+    </header>
+
+    <h3>Reviews</h3>
+    <div id="reviews">
+      <!-- This is where my Javascript file will display my reviews -->
+    </div>
+
+    <form id="add-review">
+      <h4>Share Your Experience</h4>
+      <label for="name">Name:</label>
+      <input id="name" type="text" name="name" placeholder="Name" required />
+
+      <label for="rating">Rating:</label>
+      <input id="rating" type="number" name="rating" placeholder="1-5" min="1" max="5" required />
+
+      <label for="review-text">Review:</label>
+      <textarea
+        id="review-text"
+        name="review-text"
+        placeholder="Type your review here"
+        rows="4"
+        required
+      ></textarea>
+
+      <input id="create" type="submit" value="Create" name="create" />
+    </form>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

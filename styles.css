@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins&display=swap");
+
+/* changing the font for the webpage */
+body {
+  font-family: PT Sans;
+}
+
+/* styling the top of every page */
+header {
+  padding: 1em;
+  background-color: #333;
+  color: white;
+  font-family: Poppins;
+}
+#logo-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#title {
+  padding: 0.5em;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  font-size: 15px;
+}
+.navLinks {
+  padding: 1em;
+}
+.navLinks:link,
+.navLinks:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* making all links (not including the nav bar) black */
+a {
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+}
+
+/* styling the images */
+img {
+  border: solid black;
+}
+#faceCards {
+  max-width: 25%;
+  height: auto;
+}
+
+/* styling all videos */
+iframe {
+  border: solid black;
+}
+
+/* styling the images on home page */
+.homepage-needs {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+.hook-description {
+  padding: 1em;
+}
+
+/* background color for every other section light grey */
+#hook,
+#how-to-play,
+#how-to-video,
+#why-er,
+#honesty {
+  background-color: #eeeeee;
+}
+
+/* styling the forms */
+#newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 1em;
+  background-color: #333;
+  color: white;
+}
+#add-review {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 1em;
+  background-color: #333;
+  color: white;
+}
+#review-text {
+  width: 50%;
+}
+
+/* styling the review cards */
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+/* styling the name and rating div */
+.card-header {
+  background-color: #f8f8f8;
+  padding: 15px;
+}
+/* styling the name */
+.card-header h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+/* styling the rating */
+.card-header h4 {
+  font-size: 16px;
+  color: #333;
+}
+/* styling the review and date div */
+.card-body {
+  padding: 15px;
+}
+/* styling the review */
+.card-body p {
+  margin-bottom: 10px;
+}
+/* styline the date */
+.card-body datetime {
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* what to do with the page on mobile */
+@media screen and (max-width: 400px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .navLinks {
+    padding: 0.5em;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
+  /* links that are too long are going to wrap to next line */
+  #resources {
+    overflow-wrap: break-word;
+  }
+
+  /* styling the cards when on mobile */
+  .card {
+    /* i want the header div and body div to be
+        side by side on mobile */
+    display: flex;
+  }
+  .card-header {
+    width: 30%;
+  }
+  .card-body {
+    width: 70%;
+  }
+}
