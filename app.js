@@ -102,6 +102,6 @@ addReviewForm.addEventListener("submit", (event) => {
   clearReviewCards();
   // reload the reviewData array, which will include the new review
   loadReviews(reviewData);
-  // resets the form (didn't have to, but it will make it look like)
+  // resets the form
   addReviewForm.reset();
 });
